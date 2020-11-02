@@ -14,7 +14,7 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="navigation">
           <a class="logo link" href="./index.html" lang="en">Web<span class="logo-second-part">Studio</span></a>
@@ -49,7 +49,7 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header> -->
     <!--MAIN_CONTENT-->
     <main class="main">
       <!--HERO-->
@@ -114,19 +114,23 @@
         </div>
       </section>
       <!--WHAT_WE_DO-->
-      <section class="what-we-do section">
+      <section class="what-we-do">
         <div class="container">
           <h2 class="what-we-do-title section-title">Чем мы занимаемся</h2>
           <ul class="what-we-do-list list">
             <li class="what-we-do-list-item">
               <div class="what-we-do-content">
-                <img
+                <picture>
+                  <source srcset="./images/what_we_do/works-first.jpg 1x, ./images/what_we_do/works-first@2x.jpg 2x" 
+                  media="(min-width:1200px)">
+                  <img
                   class="what-we-do-list-img"
-                  src="./images/what_we_do/img-1.jpg"
+                  src="./images/what_we_do/works-first.jpg"
                   alt="Разработчик печатает код"
                   width="370"
                   height="294"
                 />
+                </picture>
                 <div class="what-we-do-text-background">
                   <p class="what-we-do-text">Десктопные приложения</p>
                 </div>
@@ -134,13 +138,17 @@
             </li>
             <li class="what-we-do-list-item">
               <div class="what-we-do-content">
-                <img
-                  class="what-we-do-list-img"
-                  src="./images/what_we_do/img-2.jpg"
-                  alt="Разработчик работает со сматфона"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source srcset="./images/what_we_do/works-second.jpg 1x, ./images/what_we_do/works-second@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                    <img
+                    class="what-we-do-list-img"
+                    src="./images/what_we_do/works-second.jpg"
+                    alt="Разработчик работает со сматфона"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="what-we-do-text-background">
                   <p class="what-we-do-text">Мобильные приложения</p>
                 </div>
@@ -148,13 +156,17 @@
             </li>
             <li class="what-we-do-list-item">
               <div class="what-we-do-content">
-                <img
+                <picture>
+                  <source srcset="./images/what_we_do/works-third.jpg 1x, ./images/what_we_do/works-third@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                  <img
                   class="what-we-do-list-img"
-                  src="./images/what_we_do/img-3.jpg"
+                  src="./images/what_we_do/works-third.jpg"
                   alt="Разработчик выбирает цвет приложения"
                   width="370"
                   height="294"
                 />
+                </picture>
                 <div class="what-we-do-text-background">
                   <p class="what-we-do-text">Дизайнерские решения</p>
                 </div>
@@ -344,7 +356,7 @@
         </div>
       </section>
       <!--REGULAR-->
-      <section class="regular-customers">
+      <!-- <section class="regular-customers">
         <div class="container">
           <h2 class="regular-customers-title section-title">Постоянные клиенты</h2>
           <ul class="regular-customers-list list">
@@ -393,9 +405,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!--FOOTER-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-left-side">
@@ -458,10 +470,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!--MODAL FORM-->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal-wrapper">
         <div class="modal">
           <button type="button" class="close-btn" data-modal-close>
@@ -513,7 +525,7 @@
         </div>
       </div>
     </div>
-    
+     -->
 <!--JS-->
     <script src="./js/modal.js"></script>
   </body>
