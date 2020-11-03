@@ -2,8 +2,8 @@
   font-family: $secondary-font;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: $accent-color;
 
@@ -14,11 +14,24 @@
     }
   }
   .footer-content & {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
   }
+}
 
-  .navigation & {
-    margin-right: 90px;
+@media screen and (max-width: 767px) {
+  .logo {
+    .navigation & {
+      align-self: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+    .navigation & {
+      margin-right: 90px;
+    }
   }
 }

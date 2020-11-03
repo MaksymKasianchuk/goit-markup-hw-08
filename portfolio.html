@@ -13,42 +13,51 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo link" href="./index.html" lang="en">Web<span class="logo-second-part">Studio</span></a>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <a class="logo link" href="./index.html" lang="en">Web<span class="logo-second-part">Studio</span></a>
+        <button type="button" class="navigation-btn" aria-expanded="false" aria-controls="navigation-menu-container"
+          data-menu-button>
+          <svg class="navigation-btn-svg" width="19" heigh="19" aria-label="Переключатель мобильного меню">
+            <use class="navigation-icon-menu" href="./images/sprites/sprite.svg#menu"></use>
+            <use class="navigation-icon-cross" href="./images/sprites/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+        <div class="navigation-menu-container" id="navigation-menu-container" data-menu>
           <ul class="navigation-list list">
             <li class="navigation-list-item">
-              <a class="navigation-list-link link accent" href="./index.html">Студия</a>
+              <a class="navigation-list-link link accent current" href="./index.html">Студия</a>
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-list-link link accent current" href="./portfolio.html">Портфолио</a>
+              <a class="navigation-list-link link accent" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation-list-item"><a class="navigation-list-link link accent" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <address class="header-address address">
-          <ul class="address-list list">
-            <li class="address-list-item">
-              <a class="header-list-link link accent" href="mailto:info@devstudio.com">
-                <svg class="header-list-link-svg">
-                  <use href="./images/sprites/sprite.svg#email"></use>
-                </svg>
-                <span class="header-list-link-text">info@devstudio.com</span>
-              </a>
-            </li>
-            <li class="address-list-item">
-              <a class="header-list-link link accent" href="tel:+380961111111">
-                <svg class="header-list-link-svg">
-                  <use href="./images/sprites/sprite.svg#smartphone"></use>
-                </svg>
-                <span class="header-list-link-text"> +38 096 111 11 11 </span>
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
+          <address class="header-address address">
+            <ul class="header-address-list list">
+              <li class="header-address-list-item">
+                <a class="header-list-link link accent" href="mailto:info@devstudio.com">
+                  <svg class="header-list-link-svg">
+                    <use href="./images/sprites/sprite.svg#email"></use>
+                  </svg>
+                  <span class="header-list-link-text">info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="header-address-list-item">
+                <a class="header-list-link link accent" href="tel:+380961111111">
+                  <svg class="header-list-link-svg">
+                    <use href="./images/sprites/sprite.svg#smartphone"></use>
+                  </svg>
+                  <span class="header-list-link-text"> +38 096 111 11 11 </span>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </nav>
+    </div>
+  </header>
     <!--MAIN_CONTENT-->
     <main>
       <!--PORTFOLIO-->
@@ -328,5 +337,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
