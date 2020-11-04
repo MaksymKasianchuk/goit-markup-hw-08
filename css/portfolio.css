@@ -23,6 +23,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -164,9 +166,13 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+.navigation .logo {
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation .logo {
-    align-self: center;
+    margin-right: 88px;
   }
 }
 
@@ -187,7 +193,6 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
-  height: 60px;
   position: relative;
 }
 
@@ -195,8 +200,6 @@ img {
   display: flex;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -242,11 +245,8 @@ img {
 .navigation-list-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
-  padding-bottom: 8px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -270,12 +270,15 @@ img {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
+    height: 60px;
   }
   .header-address-list-item:not(:last-child) {
     margin-bottom: 16px;
   }
   .header-list-link {
     justify-content: center;
+    font-size: 18px;
+    line-height: 1.167;
   }
   .navigation {
     display: flex;
@@ -292,6 +295,7 @@ img {
   }
   .navigation-menu-container {
     position: absolute;
+    z-index: 10;
     top: 100%;
     left: 0;
     width: 100%;
@@ -313,33 +317,97 @@ img {
   .navigation-list-item:not(:last-child) {
     margin-bottom: 40px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .navigation-btn {
-    display: none;
+  .navigation-list-link {
+    font-size: 18px;
+    line-height: 1.167;
+    padding-bottom: 12px;
   }
 }
 
-.portfolio {
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header-address-list {
+    align-self: center;
+  }
+  .header-list-link {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+  .navigation {
+    display: flex;
+    height: 80px;
+  }
+  .navigation-btn {
+    display: none;
+  }
+  .navigation-menu-container {
+    display: flex;
+  }
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation-list-link {
+    font-size: 14px;
+    line-height: 1.143;
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-address-list {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .header-address-list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header-address-list-item:last-child {
+    margin-left: -2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-address-list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header-address-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .header-list-link {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+  .navigation-list {
+    margin-right: 300px;
+  }
+  .navigation-list-link {
+    font-size: 14px;
+    line-height: 1.143;
+  }
 }
 
 /* ============ FILTERS  ============*/
-.filters {
-  margin-bottom: 50px;
-}
-
 .filters-list {
   display: flex;
-  justify-content: center;
+  margin: -8px;
 }
 
-.filters-list-item:not(:last-child) {
-  margin-right: 8px;
+.filters-list-item {
+  margin: 8px;
 }
 
 .filters-btn {
+  display: inline-block;
   border: none;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -360,8 +428,32 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* ============ END FILTERS  ============*/
-/* ============ PROJECTS  ============*/
+@media screen and (max-width: 767px) {
+  .filters {
+    margin-bottom: 40px;
+  }
+  .filters-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+  }
+  .filters-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+}
+
+/* ============ END FILTERS ============*/
+/* ============ PROJECTS ============*/
 .projects-list {
   display: flex;
   flex-wrap: wrap;

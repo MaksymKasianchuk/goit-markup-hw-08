@@ -1,20 +1,15 @@
-.portfolio {
-  padding-bottom: 94px;
-}
 /* ============ FILTERS  ============*/
 .filters {
-  margin-bottom: 50px;
-
   &-list {
     display: flex;
-    justify-content: center;
-
-    &-item:not(:last-child) {
-      margin-right: 8px;
+    margin: -8px;
+    &-item {
+      margin: 8px;
     }
   }
 
   &-btn {
+    display: inline-block;
     border: none;
     background-color: $filter-btn-color;
     border-radius: 4px;
@@ -37,10 +32,28 @@
     }
   }
 }
-/* ============ END FILTERS  ============*/
-
-/* ============ PROJECTS  ============*/
-
+@media screen and (max-width: 767px) {
+  .filters {
+    margin-bottom: 40px;
+    &-list {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+    &-list {
+      justify-content: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+}
+/* ============ END FILTERS ============*/ /* ============ PROJECTS ============*/
 .projects-list {
   display: flex;
   flex-wrap: wrap;
