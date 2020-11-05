@@ -32,38 +32,10 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
-  .filters {
-    margin-bottom: 40px;
-    &-list {
-      flex-wrap: wrap;
-    }
-  }
-}
-@media screen and (min-width: 768px) {
-  .filters {
-    margin-bottom: 30px;
-    &-list {
-      justify-content: center;
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .filters {
-    margin-bottom: 50px;
-  }
-}
-/* ============ END FILTERS ============*/ /* ============ PROJECTS ============*/
+
+/* ============ END FILTERS ============*/
+/* ============ PROJECTS ============*/
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-
-  &-item {
-    display: inline-block;
-    margin: 14px;
-  }
-
   &-link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,5 +103,50 @@
   .projects-list-link:focus & {
     transform: translatey(0%);
     overflow: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filters {
+    margin-bottom: 40px;
+    &-list {
+      flex-wrap: wrap;
+    }
+  }
+  .projects-list {
+    width: 100%;
+    &-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+    &-list {
+      justify-content: center;
+    }
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &-item {
+      display: inline-block;
+      margin: 15px;
+      width: 354px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+  .projects-list {
+    &-item {
+      width: 370px;
+    }
   }
 }
